@@ -1,3 +1,7 @@
 {
-  "item.mod_legal_legal.teste": "Teste"
+  "item.mod_legal_legal.item_teste": "Teste",
+
+  "block.mod_legal_legal.bloco_teste": "Teste 2",
+
+  "creativetab.tutorial_tab": "Java 2024.2"
 }

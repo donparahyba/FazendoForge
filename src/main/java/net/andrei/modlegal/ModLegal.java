@@ -1,7 +1,9 @@
 package net.andrei.modlegal;
 
 import com.mojang.logging.LogUtils;
+import net.andrei.modlegal.item.ModCreativeModTabs;
 import net.andrei.modlegal.item.ModItems;
+import net.andrei.modlegal.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,7 +26,10 @@ public class ModLegal {
     public ModLegal(){
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -39,7 +44,7 @@ public class ModLegal {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event){
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.TESTE);
+            event.accept(ModItems.ITEM_TESTE);
         }
     }
 
