@@ -4,20 +4,3 @@
     "layer0": "mod_legal_legal:item/teste"
   }
 }
-
-
-{
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0" : "tutorialmod:item/sapphire"
-  }
-}
-
-
-{
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0" : "tutorialmod:item/sword"
-  }
-}
-

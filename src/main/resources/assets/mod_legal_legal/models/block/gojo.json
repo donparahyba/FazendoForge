@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mod_legal_legal:block/teste3"
+    "all": "mod_legal_legal:block/GOJO"
   }
 }

@@ -4,10 +4,4 @@
       "model": "mod_legal_legal:block/bloco_teste"
     }
   }
-  {
-  "variants": {
-    "": {
-      "model": "modlegal:block/GOJO_block"
-    }
-  }
 }

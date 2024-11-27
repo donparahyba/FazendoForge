@@ -20,6 +20,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLOCO_TESTE = registerBlock("bloco_teste",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> GOJO = registerBlock("gojo",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -30,23 +32,6 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
-
-       public static final RegistryObject<Block> GOJO = registerBlock("GOJO",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
-
-
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
-        RegistryObject<T> toReturn = BLOCKS.register(name,block);
-        registerblockitem(name,toReturn);
-        return  toReturn;
-    }
-
-    private static <T extends Block>RegistryObject<Item> registerblockitem(String name, RegistryObject<T> block){
-        return ModItems.ITEMS.register(name,() -> new BlockItem(block.get(),new Item.Properties()));
-    }
-
-
-    
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);

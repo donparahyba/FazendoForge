@@ -13,22 +13,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> ITEM_TESTE = ITEMS.register("item_teste",
             () -> new Item(new Item.Properties()));
-
-    public static void register(IEventBus eventBus){
-        ITEMS.register(eventBus);
-    }
-       public static final DeferredRegister<Item> ITEMS =
-    DeferredRegister.create(ForgeRegistries.ITEMS, ModLegal.MOD_ID);
-
     public  static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> SWORD = ITEMS.register("SWORD",
+    public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
-}
-
 }

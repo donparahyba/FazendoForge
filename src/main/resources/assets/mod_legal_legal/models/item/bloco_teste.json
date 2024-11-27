@@ -1,7 +1,3 @@
 {
   "parent": "mod_legal_legal:block/bloco_teste"
 }
-
-{
-  "parent": "tutorialmod:block/GOJO"
-}
