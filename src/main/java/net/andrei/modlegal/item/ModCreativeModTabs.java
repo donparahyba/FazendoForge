@@ -20,6 +20,9 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, pOutput) -> {
                         pOutput.accept(ModItems.ITEM_TESTE.get());
                         pOutput.accept(ModBlocks.BLOCO_TESTE.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
+                        pOutput.accept(ModItems.SWORD.get());
+                        pOutput.accept(ModBlocks.GOJO.get());
                     })
                     .build());
 
