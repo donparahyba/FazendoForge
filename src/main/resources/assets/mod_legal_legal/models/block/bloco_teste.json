@@ -4,3 +4,9 @@
     "all": "mod_legal_legal:block/teste3"
   }
 }
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/GOJO_block"
+  }
+}
