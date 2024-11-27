@@ -45,7 +45,9 @@ public class ModLegal {
     private void addCreative(BuildCreativeModeTabContentsEvent event){
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ITEM_TESTE);
-        }
+        }else-if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.SWORD);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
