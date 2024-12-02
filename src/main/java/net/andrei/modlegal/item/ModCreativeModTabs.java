@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SWORD.get());
                         pOutput.accept(ModBlocks.GOJO.get());
                         pOutput.accept(ModBlocks.TERRA.get());
+                        pOutput.accept(ModItems.CORINTHIANS.get());
                     })
                     .build());
 

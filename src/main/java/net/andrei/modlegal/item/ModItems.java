@@ -17,6 +17,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CORINTHIANS = ITEMS.register("corinthians",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

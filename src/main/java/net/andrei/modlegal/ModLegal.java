@@ -47,6 +47,7 @@ public class ModLegal {
             event.accept(ModItems.ITEM_TESTE);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.SWORD);
+            event.accept(ModItems.CORINTHIANS);
         }
     }
 
